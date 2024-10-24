@@ -18,24 +18,49 @@ public class Main {
         System.out.println(fractions[1]);
         System.out.println(fractions[3]);
         System.out.println(fractions[4]);
+
         System.out.println("Задача 2");
-        System.out.println(Arrays.toString(numbers));
-        System.out.println(Arrays.toString(fractions));
-        System.out.println("Задача 3");
-        for (int i = numbers.length - 1; i >= 0; i--) {
-            System.out.print(numbers[i] + ", ");
-        } System.out.println();
-        {
-            for (int b = fractions.length - 1; b >= 0; b--) {
-                System.out.print(fractions[b] + ",");
-            }
-            System.out.println();
-            System.out.println("Задача 4");
-            int [] num = {1,2,3};
-            for (int k = 0; k < num.length; k++)
-                if (num[k] % 2 != 0)
-                    num[k] = num[k] + 1;
-            System.out.println(Arrays.toString(num));
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i]);
+            if (i != numbers.length - 1) {
+                System.out.print(", ");
             }
         }
+        System.out.println();
+
+        for (int i = 0; i < fractions.length; i++) {
+            System.out.print(fractions[i]);
+            if (i != fractions.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        System.out.println("Задача 3");
+        for (int i = numbers.length - 1; i >= 0; i--) {
+            System.out.print(numbers[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        for (int i = fractions.length - 1; i >= 0; i--) {
+            System.out.print(fractions[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+        System.out.println("Задача 4");
+        int[] num = {1, 2, 3, 4, 5};
+        for (int k = 0; k < num.length; k++) {
+            if (num[k] % 2 != 0) {
+                num[k]++;
+            }
+        }
+        System.out.println(Arrays.toString(num));
     }
+}
+
+
+
+
